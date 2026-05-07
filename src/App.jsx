@@ -260,19 +260,19 @@ function RegistrationPage({ onNext }) {
         <div style={{ display: "flex", flexDirection: "column", gap: "0.85rem" }}>
           <div>
             <label>Full Name *</label>
-            <input placeholder="Dr. Jane Smith" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
+            <input placeholder="Bebeto G" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
           </div>
           <div>
             <label>Institute / Organization *</label>
-            <input placeholder="University of Chemistry" value={form.institute} onChange={e => setForm({ ...form, institute: e.target.value })} />
+            <input placeholder="Schrodinger's Student" value={form.institute} onChange={e => setForm({ ...form, institute: e.target.value })} />
           </div>
           <div>
             <label>Email Address *</label>
-            <input type="email" placeholder="jane@university.edu" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
+            <input type="email" placeholder="you@university.edu" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
           </div>
           <div>
             <label>Contact Number</label>
-            <input type="tel" placeholder="+91 9876543210" value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
+            <input type="tel" placeholder="8606512587" value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
           </div>
           {err && <div style={{ color: T.danger, fontSize: "0.82rem" }}>⚠ {err}</div>}
           <button className="btn btn-primary" style={{ width: "100%", justifyContent: "center", marginTop: "0.5rem" }} onClick={submit} disabled={loading}>
